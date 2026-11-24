@@ -1,2 +1,22 @@
-# toledo-lab-vereda-refugio
-Vereda Refúgio · projeto conceitual de hotelaria em Next.js e TypeScript.
+# Vereda Refúgio
+
+Landing page conceitual de portfólio para o segmento de **Hospedagem e ecoturismo**. Marca, serviços e dados são fictícios.
+
+**Demonstração:** Experiência de hospedagem demonstrativa. Não há envio de dados pessoais, sistema de cadastro ou pagamento.
+
+## Rodar localmente
+
+Requisitos: Node.js 22+ e npm.
+
+```sh
+npm ci
+npm run dev
+```
+
+Abra http://localhost:3000 para ver a landing page.
+
+## Publicar
+
+O projeto usa Next.js App Router, TypeScript e exportação estática. `npm run build` gera `out/`.
+Para GitHub Pages, em **Settings → Pages**, selecione **GitHub Actions**, então execute o fluxo “Publicar demonstração no GitHub Pages”. O fluxo configura o caminho público do repositório automaticamente.
+Para Vercel, importe o repositório como projeto Next.js sem definir `PAGES_BASE_PATH`.
